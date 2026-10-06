@@ -1,0 +1,32 @@
+# Fylane's Python SDK. Zero dependencies, deliberately: a dependency in an
+# SDK is a dependency in every customer's application. Not yet on PyPI —
+# publication is a founder decision, like npm for @fylane/node.
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "fylane"
+version = "0.2.0"
+description = "Fylane — upload, inspect, convert, OCR and process files through one API."
+readme = "README.md"
+requires-python = ">=3.9"
+license = { text = "MIT" }
+keywords = ["files", "pdf", "images", "ocr", "conversion", "api", "sdk"]
+classifiers = [
+  "Development Status :: 4 - Beta",
+  "Intended Audience :: Developers",
+  "License :: OSI Approved :: MIT License",
+  "Programming Language :: Python :: 3",
+  "Topic :: Software Development :: Libraries",
+]
+dependencies = []
+
+[project.urls]
+Homepage = "https://fylane.dev"
+Documentation = "https://fylane.dev/docs/quickstart"
+Repository = "https://github.com/crazyminicoder/fylane-sdk"
+Documentation = "https://fylane.dev/docs"
+
+[tool.setuptools.packages.find]
+include = ["fylane*"]

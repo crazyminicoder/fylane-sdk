@@ -1,0 +1,56 @@
+{
+  "name": "@fylane/node",
+  "version": "0.1.0",
+  "description": "The official Fylane SDK for Node.js — upload, process, and fetch results with one call.",
+  "license": "MIT",
+  "homepage": "https://fylane.dev",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/crazyminicoder/fylane-sdk.git",
+    "directory": "node"
+  },
+  "keywords": [
+    "fylane",
+    "files",
+    "pdf",
+    "images",
+    "ocr",
+    "conversion",
+    "upload",
+    "sdk"
+  ],
+  "publishConfig": {
+    "access": "public"
+  },
+  "type": "module",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    }
+  },
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "engines": {
+    "node": ">=18.17"
+  },
+  "scripts": {
+    "build": "tsc -p tsconfig.build.json",
+    "typecheck": "tsc -p tsconfig.json --noEmit",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "test:coverage": "vitest run --coverage"
+  },
+  "devDependencies": {
+    "@types/node": "22.10.7",
+    "@vitest/coverage-v8": "3.2.7",
+    "typescript": "5.7.3",
+    "vitest": "3.2.7"
+  },
+  "bugs": {
+    "url": "https://github.com/crazyminicoder/fylane-sdk/issues"
+  }
+}

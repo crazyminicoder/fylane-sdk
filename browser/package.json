@@ -1,0 +1,53 @@
+{
+  "name": "@fylane/browser",
+  "version": "0.1.0",
+  "description": "The official Fylane browser upload SDK — a capability in, a file up, progress along the way. No API key ever touches the page.",
+  "license": "MIT",
+  "homepage": "https://fylane.dev",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/crazyminicoder/fylane-sdk.git",
+    "directory": "browser"
+  },
+  "keywords": [
+    "fylane",
+    "upload",
+    "browser",
+    "multipart",
+    "presigned",
+    "files"
+  ],
+  "publishConfig": {
+    "access": "public"
+  },
+  "type": "module",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    }
+  },
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "sideEffects": false,
+  "scripts": {
+    "build": "tsc -p tsconfig.build.json",
+    "typecheck": "tsc -p tsconfig.json --noEmit",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "test:coverage": "vitest run --coverage"
+  },
+  "devDependencies": {
+    "@types/node": "22.10.7",
+    "@vitest/coverage-v8": "3.2.7",
+    "jsdom": "26.0.0",
+    "typescript": "5.7.3",
+    "vitest": "3.2.7"
+  },
+  "bugs": {
+    "url": "https://github.com/crazyminicoder/fylane-sdk/issues"
+  }
+}
